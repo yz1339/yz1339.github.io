@@ -1,8 +1,9 @@
 p{
-	text-align: center;
+	color: orange;
 	font-size: 18px;
 }
 
 img{
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
