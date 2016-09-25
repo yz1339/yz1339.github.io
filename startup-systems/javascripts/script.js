@@ -15,7 +15,8 @@ $(document).ready(function() {
     	.done(function(json){
     		console.log(json);
     		$( "<p class=\"red\">" ).text("My github username is: " + json.login ).appendTo( "body" );
-     		$( "<p class=\"red\">").html("Details: " + json.url ).appendTo( "body" );
+     		$( "<a>").attr("href", json.url).appendTo( "body" );
+     		$("<p class=\"red\">").text('Details').appendTo("a")
     	})
     	.fail(function( xhr, status, errorThrown ) {
 		    alert( "Sorry, there was a problem!" );
